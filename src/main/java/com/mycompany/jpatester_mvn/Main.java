@@ -5,6 +5,7 @@
  */
 package com.mycompany.jpatester_mvn;
 
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.persistence.EntityManager;
@@ -45,6 +46,13 @@ public class Main {
             e.setAge(54);
             em.persist(e);
             em.getTransaction().commit();
+            
+            List<Customer> ListOfCustomers = em.createQuery("SELECT c FROM Customer c").getResultList();
+            System.out.println("List of Customers");
+            for(Customer customer:ListOfCustomers){
+                System.out.println(customer.getName());
+            }
+            
         }catch(Exception e){
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, e);
         }finally{
