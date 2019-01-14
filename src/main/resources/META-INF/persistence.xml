@@ -6,6 +6,14 @@
     <class>test.Customer</class>
     <class>test.ProductOrder</class>
     <class>test.Department</class>
+    <class>app.test.Department</class>
+    <class>app.test.ProductOrder</class>
+    <class>app.test.Customer</class>
+    <class>app.test.Employee</class>
+    <class>test.test.Department</class>
+    <class>test.test.ProductOrder</class>
+    <class>test.test.Customer</class>
+    <class>test.test.Employee</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/jpatester_mvn?zeroDateTimeBehavior=convertToNull"/>
       <property name="javax.persistence.jdbc.password" value="itstudies12345"/>

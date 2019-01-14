@@ -5,15 +5,15 @@
  */
 package com.mycompany.jpatester_mvn;
 
+import app.test.Address;
+import app.test.Customer;
+import app.test.Employee;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-import test.Address;
-import test.Customer;
-import test.Employee;
 
 /**
  *
