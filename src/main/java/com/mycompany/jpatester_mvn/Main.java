@@ -7,7 +7,9 @@ package com.mycompany.jpatester_mvn;
 
 import app.test.Address;
 import app.test.Customer;
+import app.test.Department;
 import app.test.Employee;
+import app.test.ProductOrder;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -44,8 +46,18 @@ public class Main {
             Employee e=new Employee();
             e.setName("FredEmp");
             e.setAge(54);
+            
+            Department d=new Department();
+            d.setName("fred");
+            em.persist(d);
+            
+            ProductOrder po=new ProductOrder();
+            po.setName("poname");
+            em.persist(po);
+
             em.persist(e);
             em.getTransaction().commit();
+            
             
             List<Customer> ListOfCustomers = em.createQuery("SELECT c FROM Customer c").getResultList();
             System.out.println("List of Customers");

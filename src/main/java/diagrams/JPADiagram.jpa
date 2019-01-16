@@ -34,7 +34,7 @@
             <jpa:id attribute-type="Long" v="true" xvt="" name="id" id="_14845797841115">
                 <jpa:xwm/>
                 <jpa:xm/>
-                <jpa:generated-value/>
+                <jpa:generated-value strategy="IDENTITY"/>
             </jpa:id>
         </jpa:attributes>
     </jpa:entity>
@@ -51,6 +51,7 @@
             <jpa:id attribute-type="Long" v="true" xvt="" name="id" id="_14845797841318">
                 <jpa:xwm/>
                 <jpa:xm/>
+                <jpa:generated-value strategy="IDENTITY"/>
             </jpa:id>
         </jpa:attributes>
     </jpa:entity>
@@ -90,6 +91,7 @@
             </jpa:basic>
         </jpa:attributes>
     </jpa:embeddable>
+    <jpa:c/>
     <jpa:wsl>
         <jpa:ws n="Main" id="_154750631152583">
             <i ref="_148457978799623" x="221" y="205"/>
